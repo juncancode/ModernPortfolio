@@ -41,7 +41,7 @@
   top: 0;
   width: 100%;
   visibility: hidden;
-
+  display: flex;
   &.show {
     visibility: visible;
   }
@@ -53,12 +53,12 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    float: left;
+    // flex-basis: 50%;
     height: 100vh;
     overflow: hidden;
   }
   &-branding {
-    background: rgba($primary-color, 0.7);
+    background: rgba($primary-color, 0.9);
     @include easeOut;
     transform: translate3d(0, 100%, 0);
 
@@ -78,7 +78,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.7);
+    background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
